@@ -42,7 +42,7 @@ abstract class IntSeqBuffer extends SeqBuffer {
 
 def newIntSeqBuf(elem1: Int, elem2: Int): IntSeqBuffer =
   new IntSeqBuffer {
-       type T = List[U]
+       type T = List[Int]
        val element = List(elem1, elem2)
      }
 val buf = newIntSeqBuf(7, 8)
